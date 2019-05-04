@@ -24,6 +24,14 @@ class StoreControllerTest extends TestCase
 
     public function providerStores()
     {
-        return [""];
+        return [['id'=>'1','name'=>'zeeman','phone'=>'011889900','email'=>'zeeman@email.com','street'=>'terra','city'=>'incognita','zip'=>'3500'],
+            ['id'=>'1','name'=>'et merkske','phone'=>'098899871','email'=>'merkske@email.com','street'=>'test','city'=>'test2','zip'=>'2020']];
+    }
+
+    /**
+     * @DataProvider providerStores
+     */
+    public function AddStores_StoreController_Status200Store() {
+        //$this->storeModel->
     }
 }
