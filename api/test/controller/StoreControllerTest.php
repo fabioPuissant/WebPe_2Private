@@ -32,6 +32,6 @@ class StoreControllerTest extends TestCase
      * @DataProvider providerStores
      */
     public function AddStores_StoreController_Status200Store() {
-        //$this->storeModel->
+        
     }
 }
