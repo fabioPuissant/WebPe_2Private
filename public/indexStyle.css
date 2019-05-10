@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+.pageGet{
+    background: #D1E8E2;
+}
+
+.pagePost{
+    background: #D9B08C;
+}
+
+.pagePut{
+    background: #FFCB9A;
+}
+
+section{
+    height: 100vh;
+}
+
+nav{
+    position: fixed;
+}
+
+.fixed{
+    position: fixed;
+}
