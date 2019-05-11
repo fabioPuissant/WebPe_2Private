@@ -7,8 +7,7 @@
     <title>Basic Bootstrap Template</title>
     <link rel="stylesheet" href="indexStyle.css?v=1.7">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-          crossorigin="anonymous">
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 <body>
@@ -33,11 +32,11 @@
         <h2>GET page</h2>
         <div class="justify-content-center container-fluid">
             <h6>Get request all stores</h6>
-            <button type="button" class="btn btn-primary">Get all stores</button>
+            <button type="button" class="btn btn-primary" id="button_get_all_persons">Get all stores</button>
             <br>
             <label for="nameInput"><h6>Get store by name:</h6></label>
             <input type="text" id="nameInput" size="20">
-            <button class="btn btn-primary">GET</button>
+            <button class="btn btn-primary" id="button_get_person">GET</button>
         </div>
 
         <table id="storeTable" class="table-striped justify-content-center table">
@@ -75,7 +74,7 @@
                 <input type="email" class="form-control" id="inputEmail" placeholder="Email address">
             </div>
             <div class="form-group">
-                <label for="inputStreet">Phone</label>
+                <label for="inputStreet">Street</label>
                 <input type="text" class="form-control" id="inputStreet" placeholder="Street name">
             </div>
             <div class="form-row">
@@ -88,7 +87,7 @@
                     <input type="text" class="form-control" id="inputZip" placeholder="Zip code">
                 </div>
             </div>
-            <button class="btn btn-primary">Post new store</button>
+            <button class="btn btn-primary" id="btn_post">Post new store</button>
         </div>
     </section>
 
@@ -97,7 +96,7 @@
         <div id="editGetForm">
             <label for="nameInput"><h6>Get store by name:</h6></label>
             <input type="text" id="nameInputPut" size="20">
-            <button class="btn btn-primary">GET</button>
+            <button class="btn btn-primary" id="button_get_person1">GET</button>
         </div>
         <div id="editPersonContainer" class="container-fluid mx-auto mt-1">
             <div id="editForm">
@@ -116,7 +115,7 @@
                 <input type="email" class="form-control" id="inputEmailEdit" placeholder="Email address">
             </div>
             <div class="form-group">
-                <label for="inputStreetEdit">Phone</label>
+                <label for="inputStreetEdit">Street</label>
                 <input type="text" class="form-control" id="inputStreetEdit" placeholder="Street name">
             </div>
             <div class="form-row">
@@ -129,7 +128,7 @@
                     <input type="text" class="form-control" id="inputZipEdit" placeholder="Zip code">
                 </div>
             </div>
-            <button class="btn btn-primary">Save changes store</button>
+            <button class="btn btn-primary" id="btn_save">Save changes store</button>
             </div>
         </div>
     </section>
