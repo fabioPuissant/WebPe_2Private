@@ -5,5 +5,12 @@
     },
     "require-dev": {
         "phpunit/phpunit": "6"
+    },
+    "autoload": {
+        "psr-4": {
+            "controller\\": "src/Controller/",
+            "model\\": "src/Model/",
+            "view\\": "src/View/"
+        }
     }
 }

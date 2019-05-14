@@ -1,6 +1,6 @@
 "use strict";
 
-import StoreController from './Controller/StoreController';
+import StoreController from './Controller/StoreController.js';
 import StoreModel from './Model/StoreModel';
 import StoresView from './View/StoresView';
 import ErrorView from './View/ErrorView';
@@ -42,7 +42,7 @@ function handleGetAllStores() {
 }
 //<WESLEY	de fetch urls kloppen niet. Ik heb dit met een json file gedaan om te testen!!!
 function handleGetAllPersons() {
-    let url = 'http://localhost:3000/persons/';
+    let url = 'http://192.168.33.22/api/stores';
     let output = document.getElementById("div_output"); //DIT WEGLATEN?????
     //makeElementEmpty(output);
 
