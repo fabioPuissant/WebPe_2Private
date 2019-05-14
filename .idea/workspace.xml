@@ -11,9 +11,8 @@
       <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" />
 =======
     <list default="true" id="8043dbe6-4a86-4d53-adcb-d052f449376b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webadv-19-wp2-dinm8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webadv-19-wp2-dinm8.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/api/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/test/controller/StoreControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/test/controller/StoreControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
@@ -22,6 +21,8 @@
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
 >>>>>>> c06e162e3e97c74356ace21574446dff75748491
+=======
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,13 +76,19 @@
 =======
         <entry file="file://$PROJECT_DIR$/api/app.php">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="17">
               <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
 >>>>>>> c06e162e3e97c74356ace21574446dff75748491
+=======
+            <state relative-caret-position="102">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/app.js">
@@ -98,10 +105,18 @@
             <state relative-caret-position="358">
               <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
 >>>>>>> c06e162e3e97c74356ace21574446dff75748491
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/test/controller/StoreControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="false">
 <<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/README.txt">
@@ -123,6 +138,13 @@
             <state relative-caret-position="17">
               <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
 >>>>>>> c06e162e3e97c74356ace21574446dff75748491
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/src/Model/PDOStoreModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
@@ -199,7 +221,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
-    <option name="width" value="979" />
+    <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -228,6 +250,7 @@
             <path>
               <item name="webadv-19-wp2-dinm8" type="b2602c69:ProjectViewProjectNode" />
               <item name="webadv-19-wp2-dinm8" type="462c0819:PsiDirectoryNode" />
+<<<<<<< Updated upstream
               <item name="api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -273,6 +296,9 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
 >>>>>>> c06e162e3e97c74356ace21574446dff75748491
+=======
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+>>>>>>> Stashed changes
             </path>
           </expand>
           <select />
@@ -282,7 +308,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/webpack_babel_jest_skeleton" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
 <<<<<<< HEAD
@@ -358,11 +384,19 @@
       <workItem from="1556997304097" duration="274000" />
       <workItem from="1557231416076" duration="1501000" />
       <workItem from="1557233600543" duration="902000" />
+<<<<<<< Updated upstream
 >>>>>>> c06e162e3e97c74356ace21574446dff75748491
+=======
+      <workItem from="1557234670245" duration="1162000" />
+      <workItem from="1557499806565" duration="739000" />
+      <workItem from="1557500644740" duration="290000" />
+      <workItem from="1557834117831" duration="631000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <option name="totallyTimeSpent" value="18122000" />
   </component>
@@ -381,13 +415,19 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
 =======
     <option name="totallyTimeSpent" value="4965000" />
+=======
+    <option name="totallyTimeSpent" value="7787000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
+<<<<<<< Updated upstream
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
 >>>>>>> c06e162e3e97c74356ace21574446dff75748491
+=======
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2751678" />
+>>>>>>> Stashed changes
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -400,11 +440,15 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+<<<<<<< Updated upstream
 <<<<<<< HEAD
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32719395" />
 =======
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
 >>>>>>> c06e162e3e97c74356ace21574446dff75748491
+=======
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
+>>>>>>> Stashed changes
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,11 +518,12 @@
     <entry file="file://$PROJECT_DIR$/api/app.php">
 >>>>>>> c06e162e3e97c74356ace21574446dff75748491
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="102">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/client/src/app.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -506,17 +551,25 @@
           <caret line="148" column="7" selection-start-line="148" selection-start-column="7" selection-end-line="148" selection-end-column="7" />
 =======
     <entry file="file://$PROJECT_DIR$/api/src/Model/PDOStoreModel.php">
+=======
+    <entry file="file://$PROJECT_DIR$/api/test/controller/StoreControllerTest.php">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        <state relative-caret-position="374">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/test/controller/StoreControllerTest.php">
+    <entry file="file://$PROJECT_DIR$/api/src/Model/PDOStoreModel.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="358">
           <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
 >>>>>>> c06e162e3e97c74356ace21574446dff75748491
+=======
+        <state relative-caret-position="17">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
