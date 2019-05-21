@@ -4,6 +4,7 @@ export default class View {
     constructor()
     {
         this.outputElement = document.getElementById('storeTableBody');
+
     }
 
     show(data)

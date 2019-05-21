@@ -16,7 +16,7 @@ export default class StoreModel {
         )
             .then(
                 (response) => {
-                    if (response.status == 200) {
+                    if (response.status === 200) {
                         return response.json();
                     } else {
                         throw `error with status ${response.status}`;
@@ -78,6 +78,7 @@ export default class StoreModel {
             return Promise.reject(new Error("Zip should be of type string with min length of 2"));
         }
         let store = {
+            id: id,
             name: name,
             phone: phone,
             city: city,
@@ -87,7 +88,7 @@ export default class StoreModel {
             method: "PUT", body: JSON.stringify(store)
         }).then((respons) => {
             if (respons.status !== 201 && respons.status !== 200) {
-                throw new Error("POST: rejected" + respons.status);
+                throw new Error("PUT: rejected" + respons.status);
             }
 
             return respons.json();

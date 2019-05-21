@@ -32,11 +32,11 @@
         <h2>GET page</h2>
         <div class="justify-content-center container-fluid">
             <h6>Get request all stores</h6>
-            <button type="button" class="btn btn-primary" id="button_get_all_persons">Get all stores</button>
+            <button type="button" class="btn btn-primary" id="button_get_all_stores">Get all stores</button>
             <br>
-            <label for="nameInput" style="font-weight: bolder">Get store by name:</label>
-            <input type="text" id="nameInput" size="20">
-            <button class="btn btn-primary" id="button_get_person">GET</button>
+            <label for="idGetInput" style="font-weight: bolder">Get store by id:</label>
+            <input type="number" min="1" id="idGetInput" size="20">
+            <button class="btn btn-primary" id="button_get_store">GET</button>
         </div>
 
         <table id="storeTable" class="table-striped justify-content-center table">
@@ -59,30 +59,22 @@
         <div id="addPersonContainer" class="container-fluid mx-auto mt-1">
             <div class="form-row col-md-6 row-md-6">
                 <div class="form-group">
-                    <label for="inputName">Name:</label>
-                    <input type="email" class="form-control" id="inputName" placeholder="Store name">
+                    <label for="inputNamePOST">Name:</label>
+                    <input type="text" class="form-control" id="inputNamePOST" placeholder="Store name">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputPhone">Phone</label>
-                    <input type="text" class="form-control" id="inputPhone" placeholder="Phone number">
+                    <label for="inputPhonePOST">Phone</label>
+                    <input type="text" class="form-control" id="inputPhonePOST" placeholder="Phone number">
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="inputEmail">Email</label>
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email address">
-            </div>
-            <div class="form-group">
-                <label for="inputStreet">Street</label>
-                <input type="text" class="form-control" id="inputStreet" placeholder="Street name">
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <label for="inputCityPOST">City</label>
+                    <input type="text" class="form-control" id="inputCityPOST">
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip" placeholder="Zip code">
+                    <label for="inputZipPOST">Zip</label>
+                    <input type="text" class="form-control" id="inputZipPOST" placeholder="Zip code">
                 </div>
             </div>
             <button class="btn btn-primary" id="btn_post">Post new store</button>
@@ -92,42 +84,33 @@
     <section class="pagePut" id="pagePut">
         <h2>PUT page</h2>
         <div id="editGetForm">
-            <label for="nameInputPut" style="font-weight: bolder">Get store by name:</label>
-            <input type="text" id="nameInputPut" size="20">
-            <button class="btn btn-primary" id="button_get_person1">GET</button>
+            <label for="idInputPut" style="font-weight: bolder">Id:</label>
+            <input type="number" min="1" id="idInputPUT" size="20">
+
         </div>
         <div id="editPersonContainer" class="container-fluid mx-auto mt-1">
-            <div id="editForm">
             <div class="form-row col-md-6 row-md-6">
                 <div class="form-group">
-                    <label for="inputNameEdit">Name:</label>
-                    <input type="email" class="form-control" id="inputNameEdit" placeholder="Store name">
+                    <label for="inputNamePUT">Name:</label>
+                    <input type="text" class="form-control" id="inputNamePUT" placeholder="Store name">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="inputPhoneEdit">Phone</label>
-                    <input type="text" class="form-control" id="inputPhoneEdit" placeholder="Phone number">
+                    <label for="inputPhonePUT">Phone</label>
+                    <input type="text" class="form-control" id="inputPhonePUT" placeholder="Phone number">
                 </div>
-            </div>
-            <div class="form-group">
-                <label for="inputEmailEdit">Email</label>
-                <input type="email" class="form-control" id="inputEmailEdit" placeholder="Email address">
-            </div>
-            <div class="form-group">
-                <label for="inputStreetEdit">Street</label>
-                <input type="text" class="form-control" id="inputStreetEdit" placeholder="Street name">
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="inputCityEdit">City</label>
-                    <input type="text" class="form-control" id="inputCityEdit">
+                    <label for="inputCityPUT">City</label>
+                    <input type="text" class="form-control" id="inputCityPUT">
                 </div>
                 <div class="form-group col-md-2">
-                    <label for="inputZipEdit">Zip</label>
-                    <input type="text" class="form-control" id="inputZipEdit" placeholder="Zip code">
+                    <label for="inputZipPUT">Zip</label>
+                    <input type="text" class="form-control" id="inputZipPUT" placeholder="Zip code">
                 </div>
             </div>
             <button class="btn btn-primary" id="btn_save">Save changes store</button>
-            </div>
+        </div>
         </div>
     </section>
 
