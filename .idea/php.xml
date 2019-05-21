@@ -58,6 +58,7 @@
       <path value="$PROJECT_DIR$/vendor/vendor/myclabs" />
       <path value="$PROJECT_DIR$/vendor/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/vendor/webmozart" />
+      <path value="" />
     </include_path>
   </component>
   <component name="PhpUnit">
