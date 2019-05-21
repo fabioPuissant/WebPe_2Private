@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: micha
- * Date: 2019/04/18
- * Time: 20:57
- */
 
 namespace controller;
 
@@ -13,7 +7,8 @@ use Controller\StoreController;
 
 class StoreControllerTest extends TestCase
 {
-    public function setUp() {
+    public function setUp()
+    {
         $this->storeModel = $this->getMockBuilder('\model\StoreModel')
             ->disableOriginalConstructor()
             ->getMock();
@@ -31,10 +26,12 @@ class StoreControllerTest extends TestCase
     /**
      * @DataProvider providerStores
      */
-    public function AddStores_StoreController_Status200Store() {
+    public function AddStores_StoreController_Status200Store()
+    {
     }
 
-    public function should_return_stores_object_with_id_1(){
+    public function should_return_stores_object_with_id_1()
+    {
 
     }
 }
