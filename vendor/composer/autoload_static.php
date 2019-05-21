@@ -12,9 +12,21 @@ class ComposerStaticInit37773a219d0c503e431f97b5725afc42
     );
 
     public static $prefixLengthsPsr4 = array (
+        'v' => 
+        array (
+            'view\\' => 5,
+        ),
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
+        ),
+        'm' => 
+        array (
+            'model\\' => 6,
+        ),
+        'c' => 
+        array (
+            'controller\\' => 11,
         ),
         'W' => 
         array (
@@ -41,11 +53,23 @@ class ComposerStaticInit37773a219d0c503e431f97b5725afc42
     );
 
     public static $prefixDirsPsr4 = array (
+        'view\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/View',
+        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'model\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Model',
+        ),
+        'controller\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src/Controller',
         ),
         'Webmozart\\Assert\\' => 
         array (
