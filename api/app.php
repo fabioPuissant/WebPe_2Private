@@ -13,9 +13,9 @@ $router = new AltoRouter();
 $router.setBasePath("/api/");
 
 $router->map(
-"GET",
+    "GET",
     "stores/",
-    function () use($storeController) {
+    function () use ($storeController) {
         $storeController->listStores();
     }
 );
@@ -23,8 +23,8 @@ $router->map(
 $router->map(
     "POST",
     "stores/[i:id]",
-    function() use($storeController) {
-        $requestBody = file_get_contents('php://input','r');
+    function () use ($storeController) {
+        $requestBody = file_get_contents('php://input', 'r');
         $json = json_decode($requestBody);
         $store=null;
         if(isset($json->store)) {
@@ -36,7 +36,7 @@ $router->map(
 
 $match = $router->match();
 if($match && is_callable($match['target'])) {
-    call_user_func_array($match['target'],$match['params']);
+    call_user_func_array($match['target'], $match['params']);
 } else {
     header($_SERVER["SERVER_PROTOCOL"]." 404 not found");
 }

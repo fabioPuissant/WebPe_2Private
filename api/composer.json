@@ -1,10 +1,9 @@
 {
-    "autoload": {
-        "psr-4": {
-
-        }
-    },
+<<<<<<< HEAD
+     "require": {
+=======
     "require": {
+>>>>>>> master
         "altorouter/altorouter": "1.2"
     },
     "autoload": {
