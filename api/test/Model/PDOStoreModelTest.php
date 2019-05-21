@@ -83,7 +83,7 @@ class PDOStoreModelTest extends TestCase
     {
         $storeModelPdo = new PDOStoreModel($this->connection);
         $testStore = new PDOStoreModel();
-        $testStore.
+        $output = $this.http_request('GET', ['StoreController','AddorUpdateStore']);
         $actual = $storeModelPdo->AddOrUpdateStore($this->providerStore());
         $expected = $this->providerStore();
     }
