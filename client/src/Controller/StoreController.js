@@ -10,7 +10,7 @@ export default class StoreController {
 
     listStores()
     {
-        let promise = this.storesModel.listStores()
+        let promise = this.storeModel.listStores()
             .then(
                 (stores) => {
                 this.storesView.show({stores: stores});
@@ -21,5 +21,14 @@ export default class StoreController {
                 this.errorView.show({error: error.message()});
                 }
             )
+    }
+
+    addStoreByName(id, name) {
+        let promise = this.storeModel.add(id, name);
+        promise.then( (person) => {
+            this.personView.show({person: person});
+        }).catch(error => {
+            this.errorView.show({error: error.message});
+        });
     }
 }
