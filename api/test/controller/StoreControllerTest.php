@@ -9,7 +9,7 @@
 namespace controller;
 
 use PHPUnit\Framework\TestCase;
-use \controller\StoreController;
+use Controller\StoreController;
 
 class StoreControllerTest extends TestCase
 {

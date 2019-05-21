@@ -5,7 +5,7 @@
  * Date: 2019/04/11
  * Time: 20:51
  */
-namespace Model;
+namespace Controller;
 
 use view;
 
