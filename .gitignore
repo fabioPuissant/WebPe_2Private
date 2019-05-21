@@ -20,7 +20,7 @@
 /app/config/parameters.ini
 
 #Custom
-/.idea
+/.idea/*
 # Managed by Composer
 /app/bootstrap.php.cache
 /var/bootstrap.php.cache
