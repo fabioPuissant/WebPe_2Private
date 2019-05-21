@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
      "require": {
+=======
+    "require": {
+>>>>>>> master
         "altorouter/altorouter": "1.2"
     },
     "autoload": {
