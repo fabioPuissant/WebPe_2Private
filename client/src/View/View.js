@@ -1,11 +1,13 @@
 "use strict";
 
 export default class View {
-    constructor() {
+    constructor()
+    {
         this.outputElement = document.getElementById('output');
     }
 
-    show(data) {
+    show(data)
+    {
         while (this.outputElement.hasChildNodes()) {
             this.outputElement.removeChild(this.outputElement.firstChild);
         }

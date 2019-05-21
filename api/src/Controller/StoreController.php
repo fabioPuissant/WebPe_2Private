@@ -25,7 +25,8 @@ class StoreController
         $this->jsonStoreView = $jsonStoreView;
     }
 
-    public function listStores() {
+    public function listStores()
+    {
         $statuscode = 200;
         $stores = [];
         try {
@@ -36,7 +37,8 @@ class StoreController
         $this->jsonStoresView->show(["stores" => $stores, "statuscode => $statuscode"]);
     }
 
-    public function AddStore($store) {
+    public function AddStore($store)
+    {
         $statuscode = 200;
         try {
             $this->AddOrUpdateStore($store);

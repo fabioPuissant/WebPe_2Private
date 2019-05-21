@@ -1,19 +1,25 @@
 "use strict";
 
 export default class StoreController {
-    constructor(storeModel,storesView, errorView) {
+    constructor(storeModel,storesView, errorView)
+    {
         this.storeModel = storeModel;
         this.storesView = storesView;
         this.errorView = errorView;
     }
 
-    listStores() {
+    listStores()
+    {
         let promise = this.storesModel.listStores()
-            .then((stores) => {
+            .then(
+                (stores) => {
                 this.storesView.show({stores: stores});
-            })
-            .catch(error => {
+                }
+            )
+            .catch(
+                error => {
                 this.errorView.show({error: error.message()});
-            })
+                }
+            )
     }
 }

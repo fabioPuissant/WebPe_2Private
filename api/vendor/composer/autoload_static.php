@@ -12,9 +12,11 @@ class ComposerStaticInit10bf4bdec5fcf88a8e4ca28aebf92d6f
 
     public static function getInitializer(ClassLoader $loader)
     {
-        return \Closure::bind(function () use ($loader) {
-            $loader->classMap = ComposerStaticInit10bf4bdec5fcf88a8e4ca28aebf92d6f::$classMap;
+        return \Closure::bind(
+            function () use ($loader) {
+                $loader->classMap = ComposerStaticInit10bf4bdec5fcf88a8e4ca28aebf92d6f::$classMap;
 
-        }, null, ClassLoader::class);
+            }, null, ClassLoader::class
+        );
     }
 }

@@ -2,6 +2,9 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/View" isTestSource="false" packagePrefix="view\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Controller" isTestSource="false" packagePrefix="controller\" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Model" isTestSource="false" packagePrefix="model\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/altorouter/altorouter" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
@@ -36,6 +39,17 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/filesystem" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/bin" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/doctrine" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/myclabs" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/phpdocumentor" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/phpspec" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/sebastian" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/symfony" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/theseer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/vendor/webmozart" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
     </content>
     <orderEntry type="inheritedJdk" />
