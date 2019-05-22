@@ -4,45 +4,45 @@ export default class StoreController {
     constructor(storeModel, storesView, errorView) {
         this.storeModel = storeModel;
         this.storesView = storesView;
-        this.errorView = errorView;
+
     }
 
-    listStores() {
-        let promise = this.storeModel.listStores();
+    listStores(url) {
+        let promise = this.storeModel.listStores(url);
         promise.then((stores) => {
                 this.storesView.show({stores: stores});
             }
         ).catch(error => {
-                this.errorView.show({error: error.message()});
+            console.log(error);
             }
         )
     }
 
-    listStore(id) {
-        let promise = this.storeModel.listStore(id);
+    listStore(url, id) {
+        let promise = this.storeModel.listStore(url,id);
         promise.then((store) => {
             this.storesView.show({stores: store});
         })
             .catch(error =>
-                this.errorView.show({error: error.message()})
+                console.log(error)
             );
     }
 
-    addStore(name, phone, city, zip) {
-        let promise = this.storeModel.addStore(name, phone, city, zip);
+    addStore(url, name, phone, city, zip) {
+        let promise = this.storeModel.addStore(url, name, phone, city, zip);
         promise.then((store) => {
             this.storesView.show({store: store});
         }).catch(error => {
-            this.errorView.show({error: error.message});
+            console.log(error);
         });
     }
 
-    saveStore(id, name,phone, city, zip){
-        let promise = this.storeModel.saveStore(id, name, phone, city, zip);
+    saveStore(url, id, name,phone, city, zip){
+        let promise = this.storeModel.updateStore(url, id, name, phone, city, zip);
         promise.then((store) => {
             this.storesView.show({store: store});
         }).catch(error => {
-            this.errorView.show({error: error.message});
+            console.log(error);
         });
     }
 }

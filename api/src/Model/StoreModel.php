@@ -12,8 +12,6 @@ interface StoreModel
 {
     public function ListStoreById($id);
     public function ListAllStores();
-    public function AddStore();
-    public function UpdateStore();
-    public function DeleteStore();
+    public function AddOrUpdateStore($store);
 
 }

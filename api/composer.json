@@ -1,16 +1,12 @@
 {
-<<<<<<< HEAD
      "require": {
-=======
-    "require": {
->>>>>>> master
         "altorouter/altorouter": "1.2"
     },
     "autoload": {
         "psr-4": {
             "controller\\": "src/Controller/",
             "model\\": "src/Model/",
-            "view\\": "src/View/"
+            "view\\": "src/Views/"
         }
     }
 }

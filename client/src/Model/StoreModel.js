@@ -1,13 +1,33 @@
 "use strict";
-
 export default class StoreModel {
-    constructor(url) {
-        this.url = url;
+
+    constructor(givenUrl) {
+        this.url = "192.168.33.22/api/stores";
     }
 
-    listStores() {
-        return fetch(
+    listStores(url) {
+         return fetch(
             url, {
+                method: "GET",
+                headers: {
+                    "accept": "application/json",
+                }
+            }
+        )
+            .then(
+                (response) => {
+                    if (response.status >= 200 && response.status < 300) {
+                         return response.json();
+                    } else {
+                        throw `error with status ${response.status}`;
+                    }
+                }
+            );
+    }
+
+    listStore(url, id){
+        return fetch(
+            (url+id), {
                 method: "GET",
                 headers: {
                     "accept": "application/json"
@@ -19,35 +39,21 @@ export default class StoreModel {
                     if (response.status === 200) {
                         return response.json();
                     } else {
-                        throw `error with status ${response.status}`;
+                        throw `error with status ${response.status}  ${response.data}`;
                     }
                 }
             );
     }
 
-    addStore(name, phone, city, zip) {
-        if (!(this.testIsStringValid(name))) {
-            return Promise.reject(new Error("Name should be of type string with min length of 2"));
-        }
+    addStore(url, name, phone, city, zip) {
 
-        if (!(this.testIsStringValid(phone))) {
-            return Promise.reject(new Error("Phone should be of type string with min length of 2"));
-        }
-
-        if (!(this.testIsStringValid(city))) {
-            return Promise.reject(new Error("City should be of type string with min length of 2"));
-        }
-
-        if (!(this.testIsStringValid(zip))) {
-            return Promise.reject(new Error("Zip should be of type string with min length of 2"));
-        }
         let store = {
             name: name,
             phone: phone,
             city: city,
             zip: zip
         };
-        return fetch(this.url, {
+        return fetch(url, {
             method: "POST", body: JSON.stringify(store)
         }).then((respons) => {
             if (respons.status !== 201 && respons.status !== 200) {
@@ -58,25 +64,8 @@ export default class StoreModel {
         })
     }
 
-    updateStore(id, name, phone, city, zip) {
-        if (id >= 0) {
-            return Promise.reject((new Error("ID must be greather than 0!")));
-        }
-        if (!(this.testIsStringValid(name))) {
-            return Promise.reject(new Error("Name should be of type string with min length of 2"));
-        }
+    updateStore(url, id, name, phone, city, zip) {
 
-        if (!(this.testIsStringValid(phone))) {
-            return Promise.reject(new Error("Phone should be of type string with min length of 2"));
-        }
-
-        if (!(this.testIsStringValid(city))) {
-            return Promise.reject(new Error("City should be of type string with min length of 2"));
-        }
-
-        if (!(this.testIsStringValid(zip))) {
-            return Promise.reject(new Error("Zip should be of type string with min length of 2"));
-        }
         let store = {
             id: id,
             name: name,
@@ -84,7 +73,7 @@ export default class StoreModel {
             city: city,
             zip: zip
         };
-        return fetch(this.url, {
+        return fetch(url, {
             method: "PUT", body: JSON.stringify(store)
         }).then((respons) => {
             if (respons.status !== 201 && respons.status !== 200) {
@@ -96,7 +85,7 @@ export default class StoreModel {
     }
 
     testIsStringValid(data) {
-        if (!(typeof data === 'string')) {
+        if ((typeof data === 'undefined')) {
             return false;
         }
 

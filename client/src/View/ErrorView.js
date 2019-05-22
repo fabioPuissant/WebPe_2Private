@@ -7,4 +7,5 @@ export default class ErrorView extends  View {
         let error = data.error;
         super.show(error);
     }
+
 }

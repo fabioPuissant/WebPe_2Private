@@ -7,7 +7,7 @@
  */
 namespace Controller;
 
-use view;
+use Model\PDOStoreModel;
 
 class StoreController
 {
@@ -17,24 +17,29 @@ class StoreController
 
     /**
      * StoreController constructor.
+     * @param PDOStoreModel $storeModel
      */
-    public function __construct(StoreModel $storeModel, view $jsonStoresView, view $jsonStoreView)
+    public function __construct(PDOStoreModel $storeModel)
     {
+
         $this->storeModel = $storeModel;
-        $this->jsonStoresView = $jsonStoresView;
-        $this->jsonStoreView = $jsonStoreView;
+        $this->jsonStoresView = new JsonStoresView();
+
+        $this->jsonStoreView = new JsonStoresView();
     }
 
     public function listStores()
     {
         $statuscode = 200;
         $stores = [];
+        $problem = "";
         try {
             $stores = $this->storeModel->ListAllStores();
         } catch (\PDOException $exception) {
             $statuscode = 500;
+            $problem = $exception;
         }
-        $this->jsonStoresView->show(["stores" => $stores, "statuscode => $statuscode"]);
+        $this->jsonStoresView->show(["stores" => $stores, "statuscode => $statuscode", "problem" => $problem]);
     }
 
     public function AddStore($store)
@@ -47,6 +52,11 @@ class StoreController
         } catch (\PDOException $exception) {
             $statuscode = 500;
         }
-        return $this->JsonStoreView->show(["store" => $store, "statuscode" => $statuscode]);
+        return $this->jsonStoreView->show(["store" => $store, "statuscode" => $statuscode]);
+    }
+
+    public function AddOrUpdateStore($store)
+    {
+        $this->storeModel->AddOrUpdateStore($store);
     }
 }

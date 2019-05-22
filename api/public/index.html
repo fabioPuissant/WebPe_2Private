@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>client</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Basic Bootstrap Template</title>
+    <link rel="stylesheet" href="indexStyle.css?v=1.7">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+<h1>REST API tester</h1>
+<nav class="navbar rounded justify-content-center">
+    <ul class="nav fixed btn-warning">
+        <li class="nav-item ">
+            <a class="nav-link" href="#pageGet">GET</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#pagePost">POST</a>
+        </li>
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#pagePut">PUT</a>
+        </li>
+    </ul>
+</nav>
+<main>
+    <section class="pageGet" id="pageGet">
+        <h2>GET page</h2>
+        <div class="justify-content-center container-fluid">
+            <h6>Get request all stores</h6>
+            <button type="button" class="btn btn-primary" id="button_get_all_stores">Get all stores</button>
+            <br>
+            <label for="idGetInput" style="font-weight: bolder">Get store by id:</label>
+            <input type="number" min="1" id="idGetInput" size="20">
+            <button class="btn btn-primary" id="button_get_store">GET</button>
+        </div>
+
+        <table id="storeTable" class="table-striped justify-content-center table">
+            <thead>
+            <tr>
+                <th scope="col" class="thead-dark">Id</th>
+                <th scope="col" class="thead-dark">Name</th>
+                <th scope="col" class="thead-dark">Phone</th>
+                <th scope="col" class="thead-dark">City</th>
+                <th scope="col" class="thead-dark">Zip</th>
+            </tr>
+            </thead>
+            <tbody id="storeTableBody">
+            </tbody>
+        </table>
+    </section>
+
+    <section class="pagePost" id="pagePost">
+        <h2>POST page</h2>
+        <div id="addPersonContainer" class="container-fluid mx-auto mt-1">
+            <div class="form-row col-md-6 row-md-6">
+                <div class="form-group">
+                    <label for="inputNamePOST">Name:</label>
+                    <input type="text" class="form-control" id="inputNamePOST" placeholder="Store name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPhonePOST">Phone</label>
+                    <input type="text" class="form-control" id="inputPhonePOST" placeholder="Phone number">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCityPOST">City</label>
+                    <input type="text" class="form-control" id="inputCityPOST">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZipPOST">Zip</label>
+                    <input type="text" class="form-control" id="inputZipPOST" placeholder="Zip code">
+                </div>
+            </div>
+            <button class="btn btn-primary" id="btn_post">Post new store</button>
+        </div>
+    </section>
+
+    <section class="pagePut" id="pagePut">
+        <h2>PUT page</h2>
+        <div id="editGetForm">
+            <label for="idInputPut" style="font-weight: bolder">Id:</label>
+            <input type="number" min="1" id="idInputPUT" size="20">
+
+        </div>
+        <div id="editPersonContainer" class="container-fluid mx-auto mt-1">
+            <div class="form-row col-md-6 row-md-6">
+                <div class="form-group">
+                    <label for="inputNamePUT">Name:</label>
+                    <input type="text" class="form-control" id="inputNamePUT" placeholder="Store name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPhonePUT">Phone</label>
+                    <input type="text" class="form-control" id="inputPhonePUT" placeholder="Phone number">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCityPUT">City</label>
+                    <input type="text" class="form-control" id="inputCityPUT">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZipPUT">Zip</label>
+                    <input type="text" class="form-control" id="inputZipPUT" placeholder="Zip code">
+                </div>
+            </div>
+            <button class="btn btn-primary" id="btn_save">Save changes store</button>
+        </div>
+        </div>
+    </section>
+
+</main>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="js/bundle.js" charset="utf-8"></script>
+</body>
+</html>
+
