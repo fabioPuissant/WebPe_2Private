@@ -2,17 +2,32 @@
 import View from './View';
 
 export default class StoresView extends View {
+
     show(data)
     {
-        let output = "";
-        for (let store of data.stores) {
-            output = output +
-                '<tr><td>'+
-                `${store.name}</td><td>` +
-            `${store.phone}</td><td>` +
-            `${store.city}</td><td>`+
-            `${store.zip}</td></tr>`;
+        while (this.outputElement.hasChildNodes()) {
+            this.outputElement.removeChild(this.outputElement.firstChild);
         }
-        super.show(output);
+
+        let outputElement = document.getElementById('storeTableBody');
+        let container = document.createElement("div")
+
+        for (let store of data.stores) {
+            let row = document.createElement("tr");
+            let name = document.createElement('td');
+            name.innerText = store.name;
+            let phone = document.createElement('td');
+            phone.innerText = store.phone;
+            let city = document.createElement('td');
+            city.innerText = store.city;
+            let zip = document.createElement("td");
+            zip.innerText = store.zip;
+
+            row.appendChild(name);
+            row.appendChild(phone);
+            row.appendChild(city);
+            row.appendChild(zip);
+            outputElement.appendChild(row);
+        }
     }
 }

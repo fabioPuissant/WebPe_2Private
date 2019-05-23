@@ -12,6 +12,7 @@ interface StoreModel
 {
     public function ListStoreById($id);
     public function ListAllStores();
-    public function AddOrUpdateStore($store);
+    public function AddStore($store);
+    public function UpdateStore($id, $store);
 
 }

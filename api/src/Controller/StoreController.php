@@ -5,9 +5,12 @@
  * Date: 2019/04/11
  * Time: 20:51
  */
+
 namespace Controller;
 
-use Model\PDOStoreModel;
+use model\PDOStoreModel;
+use view\MultipleStores;
+use view\SingleStore;
 
 class StoreController
 {
@@ -19,13 +22,11 @@ class StoreController
      * StoreController constructor.
      * @param PDOStoreModel $storeModel
      */
-    public function __construct(PDOStoreModel $storeModel)
+    public function __construct(PDOStoreModel $storeModel, MultipleStores $jsonStoresView, SingleStore $jsonStoreView)
     {
-
         $this->storeModel = $storeModel;
-        $this->jsonStoresView = new JsonStoresView();
-
-        $this->jsonStoreView = new JsonStoresView();
+        $this->jsonStoresView = $jsonStoresView;
+        $this->jsonStoreView = $jsonStoreView;
     }
 
     public function listStores()
@@ -42,21 +43,46 @@ class StoreController
         $this->jsonStoresView->show(["stores" => $stores, "statuscode => $statuscode", "problem" => $problem]);
     }
 
+    public function listStore($id)
+    {
+        $statuscode = 200;
+        $stores = [];
+        $problem = "";
+        try {
+            $stores = $this->storeModel->ListStoreById($id);
+        } catch (\PDOException $exception) {
+            $statuscode = 500;
+            $problem = $exception;
+        }
+        $this->jsonStoresView->show(["stores" => $stores, "statuscode => $statuscode", "problem" => $problem]);
+    }
+
     public function AddStore($store)
     {
         $statuscode = 200;
         try {
-            $this->AddOrUpdateStore($store);
+            $this->storeModel->AddStore($store);
         } catch (\InvalidArgumentException $exception) {
             $statuscode = 400;
+            echo "invalid argument " . $exception;
         } catch (\PDOException $exception) {
             $statuscode = 500;
+            echo "pdo exception " .$exception;
         }
-        return $this->jsonStoreView->show(["store" => $store, "statuscode" => $statuscode]);
+       return;
     }
 
-    public function AddOrUpdateStore($store)
+    public function UpdateStore($id, $store)
     {
-        $this->storeModel->AddOrUpdateStore($store);
+        $statuscode = 200;
+        $stores = [];
+        $problem = "";
+        try {
+            $this->storeModel->UpdateStore($id, $store);
+        } catch (\PDOException $exception) {
+            $statuscode = 500;
+            echo "Pdo Exception by PUT: " . $exception;
+        }
+        //$this->jsonStoresView->show(["stores" => $stores, "statuscode => $statuscode", "problem" => $problem]);
     }
 }

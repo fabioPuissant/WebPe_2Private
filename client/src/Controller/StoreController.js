@@ -31,7 +31,7 @@ export default class StoreController {
     addStore(url, name, phone, city, zip) {
         let promise = this.storeModel.addStore(url, name, phone, city, zip);
         promise.then((store) => {
-            this.storesView.show({store: store});
+            //this.storesView.show({store: store});
         }).catch(error => {
             console.log(error);
         });
@@ -40,7 +40,7 @@ export default class StoreController {
     saveStore(url, id, name,phone, city, zip){
         let promise = this.storeModel.updateStore(url, id, name, phone, city, zip);
         promise.then((store) => {
-            this.storesView.show({store: store});
+            //this.storesView.show({store: store});
         }).catch(error => {
             console.log(error);
         });

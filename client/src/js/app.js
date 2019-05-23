@@ -45,7 +45,7 @@ function handleGetStore() {
 
 function handlePutStore() {
 
-    let id = document.getElementById("inputIdPUT").value;
+    let id = document.getElementById("idInputPUT").value;
     let newName = document.getElementById("inputNamePUT").value;
 
     let newPhone = document.getElementById("inputPhonePUT").value;

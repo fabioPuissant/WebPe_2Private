@@ -6,7 +6,7 @@
         "psr-4": {
             "controller\\": "src/Controller/",
             "model\\": "src/Model/",
-            "view\\": "src/Views/"
+            "view\\": "src/View/"
         }
     }
 }

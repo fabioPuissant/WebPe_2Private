@@ -9,6 +9,7 @@ export default class View {
 
     show(data)
     {
+        //blaaaaaa
         while (this.outputElement.hasChildNodes()) {
             this.outputElement.removeChild(this.outputElement.firstChild);
         }
